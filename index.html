@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>T -Shirt Cart</title>
+  <meta name="description" content="test">
+
+  <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+
+<body>
+  <nav class="mainNav">
+      <div class="cart" onclick="cartToggle()">
+        <p>My Cart (<text id="spanValue">0</text>)</p>
+
+        <div id="cartItems">
+          <ul >
+            <div class="itemHolder">
+              <img class="cartImg" src="./assets/images/classic-tee.jpg"/> 
+              <div class="info">
+                <p style="margin-top: 5px;">Classic Tee</p>
+                <p style="margin-top: 5px;">1 x <strong>$75.00</strong></p>
+                <p style="margin-top: 5px;">Size : S</p>
+              </div>
+           </div>
+
+            <div class="itemHolder">
+              <img class="cartImg" src="./assets/images/classic-tee.jpg"/> 
+              <div class="info">
+                <p style="margin-top: 5px;">Classic Tee</p>
+                <p style="margin-top: 5px;">3 x <strong>$75.00</strong></p>
+                <p style="margin-top: 5px;">Size : L</p>
+              </div>
+           </div>  
+
+          </ul>
+        </div>
+      </div>  
+  </nav>
+
+  <div class="mainContent">
+    <div class="leftSection">
+      <img class="image" src="/assets/images/classic-tee.jpg">
+    </div>
+
+    <div class="rightSection">
+      <h2 style="margin-bottom: 20px; font-family: 'Open Sans', sans-serif; font-weight: lighter;" >Classic Tee</h2>
+      <h3 style="margin-bottom: 20px; font-weight: bold;"> $75.00</h3>
+      <p style="font-family: 'Open Sans', sans-serif; font-weight: lighter; color:888888">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dolores voluptatem omnis quia maxime voluptatibus placeat dolore eos reiciendis atque delectus fugit culpa nihil repellat, eveniet corporis quisquam aut maiores.</p>
+      
+      <div class="sizes">
+        <p style="margin-top: 30px; margin-bottom: 5px;">Size <text id="compulField" style="color:#C90000;">*</text><text id="selectedSize"></text></p>
+          <div class="box small" id="small" onclick="smallClicked()" >
+              <h4 style="color:888888">S</h4>
+          </div>
+          <div class="box medium" id="medium" onclick="medClicked()">
+            <h4 style="color:888888">M</h4>
+          </div>
+
+          <div class="box large" id="large" onclick="largeClicked()">
+            <h4 style="color:888888">L</h4>
+          </div>
+      </div>
+
+      <div class="add">
+          <button class="button" id="btn">
+            <label>ADD TO CART</label>
+          </button> 
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="js/app.js"></script>
+</html>
